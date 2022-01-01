@@ -1,0 +1,13 @@
+class person {
+  constructor(name,emailid,phonenumber,address,qualification){
+    this.name= name;
+    this.emailid = emailid;
+    this.phonenumber =phonenumber;
+    this.address= address;
+    this.qualification =qualification;
+  }
+}
+
+let s1 =new person("pugalenthi","aravindpugalxxx@gmail.com",
+"70943yyyy","193-velavalli(village),valipatti(post),pochampalli(taluk),krishnagiri(district)-635306","Mechanical Engineering")
+console.log(s1)

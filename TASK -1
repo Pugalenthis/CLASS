@@ -1,0 +1,22 @@
+TASK-1
+
+a). class Movie {
+    constructor(title,studio,rating){
+       this.title =title;
+       this.studio=studio;
+       this.rating =rating;
+   }
+}
+
+
+d).
+class Movie {
+   constructor(title,studio,rating){
+       this.title =title;
+       this.studio=studio;
+       this.rating =rating;
+   }
+}
+
+let s1 =new Movie("Casino Royale","Eon Productions","PG13")
+console.log(s1);

@@ -1,0 +1,22 @@
+class circle{
+    constructor(radius,colour){
+        this.radius = radius
+        this.colour = colour
+        
+    }
+    getradius(){
+        return this.radius
+    }
+    getcolour(){
+        return this.colour
+    }
+    getarea(){
+        return this.radius*3.14*this.radius
+    }
+    getcircumference(){
+        return this.radius*2*3.14
+    }
+}
+
+let s1 = new circle(1.0,"red")
+console.log(s1)

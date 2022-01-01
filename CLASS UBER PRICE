@@ -1,0 +1,29 @@
+// Base Fare + ((Cost per minute x time of the ride) + (cost per mile x ride distance) x surge boost multiplier) + booking fee = Passengers Ride Fare
+
+// bsf = base fare
+// csp = cost per minute
+// tof = time of Ride
+// csp = cost per mile
+// rd = ride distance
+// sbm = surge boost multiplier
+// bf = booking fee
+
+
+class calfare{
+    constructor(bsf,csp,tof,cpm,rd,sbm,bf){
+        this.bsf = bsf
+        this.csp = csp
+        this.tof = tof
+        this.cpm = cpm
+        this.rd =rd
+        this.sbm= sbm
+        this.bf=bf
+        
+    }
+    ridefare(){
+        return (this.bf+(this.csp*this.tof)+((this.cpm*this.rd)*this.sbm)+this.bf)
+    }
+}
+
+let s1 =new calfare(2,3,4,5,6,7,8)
+console.log(s1.ridefare())
